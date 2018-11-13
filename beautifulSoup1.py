@@ -18,8 +18,8 @@ myHtml = '''<!DOCTYPE html>
 soup = BeautifulSoup(myHtml, 'html.parser')
 myH1 = soup.find("h1")
 print(myH1)
-# print only content
 print(myH1.string)
+
 
 
 
