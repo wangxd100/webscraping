@@ -7,6 +7,7 @@ myHtml = '''<!DOCTYPE html>
 <body>
 
 <h1>My First Heading</h1>
+<h1>2nd H1 tage</h1>
 <p>My first paragraph.</p>
 
 </body>
@@ -16,9 +17,11 @@ myHtml = '''<!DOCTYPE html>
 
 
 soup = BeautifulSoup(myHtml, 'html.parser')
-myH1 = soup.find("h1")
-print(myH1)
-print(myH1.string)
+myH1 = soup.findAll("h1")
+
+for item in myH1:
+    if "H1" in item.string:
+        print(item.string)
 
 
 
