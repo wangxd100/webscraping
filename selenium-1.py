@@ -12,9 +12,14 @@ driver.fullscreen_window()
 
 # ######### Test Textbox ############
 driver.get("https://www.google.com")
-driver.find_element_by_name("q").send_keys("mcps")
-time.sleep(2)
+
+driver.find_element_by_link_text("Gmail").click()
+driver.back()
+driver.find_element_by_name("q").send_keys("mcps\n")
+time.sleep(5)
 driver.quit()
+
+
 
 
 
