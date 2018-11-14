@@ -4,7 +4,7 @@ from selenium import webdriver
 
 # download Chrome Driver first
 driver = webdriver.Chrome("C:\sheldon\webscraping\chromedriver.exe")
-driver.fullscreen_window()
+# driver.fullscreen_window()
 
 # ######### Test <a> click ##########
 # driver.get("https://www.amazon.com")
@@ -12,6 +12,7 @@ driver.fullscreen_window()
 
 # ######### Test Textbox ############
 driver.get("https://www.google.com")
+driver.maximize_window()
 
 driver.find_element_by_link_text("Gmail").click()
 driver.back()

@@ -7,4 +7,6 @@ driver = webdriver.Chrome("C:\sheldon\webscraping\chromedriver.exe")
 
 driver.get("https://www.baidu.com")
 driver.maximize_window()
-driver.find_element_by_css_selector("#kw").send_keys("test\n")
+driver.find_element_by_css_selector("#kw").send_keys("减肥秘方\n")
+
+
