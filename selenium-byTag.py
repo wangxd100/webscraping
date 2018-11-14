@@ -1,10 +1,10 @@
 from selenium import webdriver
 
 driver = webdriver.Chrome("C:\sheldon\webscraping\chromedriver.exe")
-driver.fullscreen_window()
+# driver.fullscreen_window()
 
 driver.get("https://www.google.com")
-
+driver.maximize_window()
 elements = driver.find_elements_by_tag_name("a")
 print(elements)
 for element in elements:
